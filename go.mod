@@ -1,4 +1,4 @@
-module csvconvert
+module github.com/gaigals/csvconvert
 
 go 1.21.7
 
