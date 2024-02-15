@@ -24,7 +24,7 @@ func ParseCSV(input string) (map[string][]string, error) {
 }
 
 func isInputFile(input string) bool {
-	return strings.HasSuffix(input, ".csv")
+	return strings.HasSuffix(strings.ToLower(input), ".csv")
 }
 
 func readFile(filePath string) (*os.File, error) {
